@@ -23,5 +23,4 @@ function convertToOldRoman(n) {
   return result;
 }
 
-console.log(convertToOldRoman(5893));
 module.exports = convertToOldRoman;

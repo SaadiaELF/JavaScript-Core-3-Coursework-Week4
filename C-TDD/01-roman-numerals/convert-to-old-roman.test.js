@@ -9,6 +9,7 @@ let convertToOldRoman = require("./convert-to-old-roman");
   { input: 100, expected: "C" },
   { input: 500, expected: "D" },
   { input: 1000, expected: "M" },
+  { input: 1678, expected: "MDCLXXVIII" },
 ].forEach(({ input, expected }) => {
   it(`returns ${expected} if passed ${input} as an argument`, () => {
     // Act
