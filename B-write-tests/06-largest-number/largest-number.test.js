@@ -10,6 +10,16 @@ test("returns largest number in array", function () {
   expect(output).toEqual(expected);
 });
 
+
+test("test that the original array hasn't changed", function () {
+  // Arrange
+  let input = [3, 21, 88, 4, 36];
+  let expected = 5;
+  // Act
+  let output = input.length;
+  // Assert
+  expect(output).toEqual(expected);
+});
 // example
 // input: [3, 21, 88, 4, 36];
 // expected: 88;
