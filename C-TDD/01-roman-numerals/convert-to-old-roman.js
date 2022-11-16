@@ -12,7 +12,7 @@ function convertToOldRoman(n) {
   let result = "";
 
   arr.map(([key, value]) => {
-    for (let i = 0; i <= n + 1; i++) {
+    for (let i = 0; i <= n + 2; i++) {
       if (Math.floor(n / key) >= 1) {
         result += value;
         n -= key;
@@ -22,5 +22,4 @@ function convertToOldRoman(n) {
 
   return result;
 }
-
 module.exports = convertToOldRoman;
